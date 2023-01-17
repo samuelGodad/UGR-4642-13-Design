@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ 
+    
+   
+  
+</head>
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="../images/chege Bet -logos.jpeg" alt="logo photo"> </a>
+          
+           <div  class="nav__links"id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                   
+                    <li><a href="Catagory.html">Catagory</a></li>
+                    <li><a href="Contact us.html">Contact us</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <a href="#"class="reservation">register a table</a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <br>
+    <h1 class="contact">Reach Us At</h1>
+    <p class="contact">If you have any question about our restaurant you can  reach us in the following form and put your idea in the text area</p>
+    <br>
+    <div class="wrapper">
+       
+    <div id="error__message"></div>
+    <form id="myform" onsubmit="return validate();">
+        <div class="input__field">
+            <input type="text" placeholder="First Name" id="FirstName">
+        </div>
+        <div class="input__field">
+            <input type="text" placeholder="Last Name" id="LastName">
+        </div>
+        <div class="input__field">
+            <input type="text" placeholder="Phone" id="phone">
+        </div>
+        <div class="input__field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <div class="input__field">
+            <textarea placeholder="Message" id="message"></textarea>
+        </div>
+        <div class="btn">
+            <input type="submit">
+        </div>
+    </form>
+</div>
+       
+    <hr>
+    <footer>
+        <div class="row">
+          <div class="col">
+              <img src="../images/chege Bet -logos.jpeg" alt="logo photo" class="logo">
+              <p> In addition to the services that we known for <br> in the near future we are going to begin to give traing with certeficates on hotel and tourisim management system</p>
+          </div>
+          <div class="col">
+              <h3>OFFICE <div class="underline"><span></span></div></h3>
+              <p>Asmera Road</p>
+              <p>Gondar</p>
+              <p>Ethiopia</p>
+             <p class="emailid">godadsamuel@gmail.com</p>
+             <h3>dail up +251--980117655</h3>
+          </div>
+          <div class="col">
+              <h3 >PAGES <div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Category.html">Catagory</a></li>
+                  <li><a href="Location.html">Location</a></li>
+                  <li><a href="Menu.html">Menu</a></li>
+                  <li><a href="About us.html">About us</a></li>
+                  <li><a href="Contact us.html">Contact us</a></li>
+          </ul>
+          </div>
+          
+          <div class="col">
+              <h3>CONTACT US<div class="underline"><span></span></div></h3>
+              <div class="social__icons">
+                  <i class="fa fa-facebook-f"><a href=https://www.facebook.com/samuel.godad></a></i>
+                  <i class="fab fa-whatsapp"><a href=""></a></i> 
+                  
+                  <i class="fab fa-twitter"><a href=""></a></i>
+                  <br>
+                  <i class="fab fa-pinterest"><a href=""></a></i>
+                  <i class="fab fa-telegram"><a href=""></a></i>
+                  <i class="fa fa-linkedin-square"><a href=""></a></i>
+                  <p>You can use one of the above medias</p>
+  
+              </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">All Rights Reserved</p>
+     </footer>
+     <script src="https://kit.fontawesome.com/f5ba5a9167.js" crossorigin="anonymous">
+    </script>  
+    <script src="restaurant.js"></script>
+   
+</body>
+</html>
