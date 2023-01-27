@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menus</title>
+    
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <script src="./bootstrap.bundle.min.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stcylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    
+</head>
+<style>
+    :root {
+        --primary: #FEA116;
+        --light: #F1F8FF;
+        --dark: #0F172B;
+      }
+      
+      .ff-secondary {
+        font-family: 'Pacifico', cursive;
+      }
+      
+      .fw-medium {
+        font-weight: 600 !important;
+      }
+      
+      
+      
+      
+      
+      
+      .navbar-dark .navbar-nav .nav-link {
+        position: relative;
+        margin-left: 25px;
+        padding: 35px 0;
+        font-size: 15px;
+        color: var(--light) !important;
+        text-transform: uppercase;
+        font-weight: 500;
+        outline: none;
+        transition: .5s;
+      }
+      
+      .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 20px 0;
+      }
+      
+      .navbar-dark .navbar-nav .nav-link:hover,
+      .navbar-dark .navbar-nav .nav-link.active {
+        color: var(--primary) !important;
+      }
+      
+      .navbar-dark .navbar-brand img {
+        max-height: 60px;
+        transition: .5s;
+      }
+      
+      .sticky-top.navbar-dark .navbar-brand img {
+        max-height: 45px;
+      }
+      
+      @media (max-width: 991.98px) {
+        .sticky-top.navbar-dark {
+            position: relative;
+        }
+      
+        .navbar-dark .navbar-collapse {
+            margin-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, .1)
+        }
+      
+        .navbar-dark .navbar-nav .nav-link,
+        .sticky-top.navbar-dark .navbar-nav .nav-link {
+            padding: 10px 0;
+            margin-left: 0;
+        }
+      
+        .navbar-dark .navbar-brand img {
+            max-height: 45px;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .navbar-dark {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            background: transparent !important;
+        }
+        
+        .sticky-top.navbar-dark {
+            position: fixed;
+            background: var(--dark) !important;
+        }
+      }
+      
+      .footer .btn.btn-social {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--light);
+        border: 1px solid #FFFFFF;
+        border-radius: 35px;
+        transition: .3s;
+      }
+      
+      .footer .btn.btn-social:hover {
+        color: var(--primary);
+      }
+      
+      .footer .btn.btn-link {
+        display: block;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: capitalize;
+        transition: .3s;
+      }
+      
+      .footer .btn.btn-link::before {
+        position: relative;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+      
+      .footer .btn.btn-link:hover {
+        letter-spacing: 1px;
+        box-shadow: none;
+      }
+      
+      
+      
+      .footer .footer-menu a {
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid rgba(255, 255, 255, .1);
+      }
+      
+      .footer .footer-menu a:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+        </style>
+
+<body>
+
+    
+
+
+
+
+
+    <header>
+
+        <div class="container-xxl position-relative p-0 ">
+            <nav
+                class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 navbar sticky-top navbar-light bg-light">
+                <a href="" class="navbar-brand p-0">
+                    <img src="../images/chege Bet -logos.jpeg" alt="logoes">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="About us.html" class="nav-item nav-link">About Us</a>
+                        <a href="Category.html" class="nav-item nav-link">Category</a>
+                        <a href="Contact us.html" class="nav-item nav-link">Contact Us</a>
+                        <a href="Location.html" class="nav-item nav-link">Location</a>
+                        <a href="menus.html" class="nav-item nav-link">Menu</a>
+                    </div>
+                    <a href="../html/reservation.html" class="btn btn-primary py-2 px-4">Register A Table</a>
+                </div>
+            </nav>
+            <div class="container-fluid text-center background-image
+      bg-image " style="
+        background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/menuBack.avif');height:100vh;padding:5;
+        ">
+                <div class="container text-center mt-5 pt-5">
+                    <h1 class=" text-white animated slideInLeft text-center mt-3">Our menu</h1>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="menu" id="menu">
+
+            <h1 class="heading">today's <span>speciality</span></h1>
+            <div class="box__container">
+
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/menu-1.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Cheeseburger</h3>
+                        <p>
+                            A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is
+                            placed on top of the
+                            meat patty
+
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>95 Birr</span>
+                    </div>
+                </div>
+
+
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/food.png" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>mahberawe or beyaynet</h3>
+                        <p>
+                            A New collection of different food items and it is common most restaurants in ethiopia
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>50 Birr</span>
+                    </div>
+                </div>
+
+
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/image1.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>friends food </h3>
+                        <p>
+                            It is common to our restaurant and suitable to eat in group
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>100 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/menu-4.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>delicious food</h3>
+                        <p>
+                            A New collection of different vegitables with some other engrediants and it is reach in
+                            vitamins
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>60 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/enjera.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>delicious food</h3>
+                        <p>
+                            Traditional Ethiopian Food,served with mesob made from fiber Several types of stew and meat
+                            served on Injera
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>200 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/enjera2.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>delicious food</h3>
+                        <p>
+                            Traditional Ethiopian dish consisting of a meat, vegetables, grains, rice and served with
+                            pancake-like
+                            injera
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>90 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/menu-7.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>kurt</h3>
+                        <p>
+                            kurt it is a type of meat with other breads and creams
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>150 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/enjera3.jpg" alt="" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Azifa delicious food</h3>
+                        <p>
+                            Azifa is a popular Ethiopian salad consisting of green lentils, finely chopped tomatoes, and
+                            onions close up
+                            in the plate on the table. Horizontal
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>100 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/kitfo.jpg" alt="kitfo" />
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Kitfo delicious food</h3>
+                        <p>
+                            Ethiopian cuisine: kitfo with greens ,cheese and ayibe with Gomen
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>100 Birr</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="../images/dorowit.jpg" alt="sarafa">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Doro wat</h3>
+                        <p>
+                            Ethiopian red chicken stew cooked with onions and berbere (chili and spices mix), topped
+                            with hard-boiled
+                            eggs. Served with injera.
+                        </p>
+                        <a href="#" class="btn">pick it up</a>
+                        <span>300 Birr</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <style>
+        :root {
+            --orange: #ff7800;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+            --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+            --outline-hover: 0.2rem solid var(--black);
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+        }
+
+
+
+        /*MENU*/
+        .menu .box__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu .box__container .box {
+            background-color: #fff;
+            border: 0.1rem solid rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box-shadow);
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+        }
+
+        .menu .box__container .box .image {
+            height: 24rem;
+            width: 100%;
+            padding: 1.5rem;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .menu .box__container .box .image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+            animation: float 3s linear infinite;
+            -webkit-animation: float 3s linear infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0rem);
+                -webkit-transform: translateY(0rem);
+                -moz-transform: translateY(0rem);
+                -ms-transform: translateY(0rem);
+                -o-transform: translateY(0rem);
+            }
+
+            50% {
+                transform: translateY(1rem);
+                -webkit-transform: translateY(1rem);
+                -moz-transform: translateY(1rem);
+                -ms-transform: translateY(1rem);
+                -o-transform: translateY(1rem);
+            }
+        }
+
+        .menu .box__container .box .image .fa-heart {
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            text-align: center;
+            background-color: #fff;
+            color: var(--black);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        .menu .box__container .box .image .fa-heart:hover {
+            background-color: var(--orange);
+            color: #fff;
+        }
+
+        .menu .box__container .box .content {
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        .menu .box__container .box .content .stars {
+            padding-bottom: 1rem;
+        }
+
+        .menu .box__container .box .content .stars i {
+            font-size: 1.7rem;
+            color: var(--orange);
+        }
+
+        .menu .box__container .box .content h3 {
+            color: var(--black);
+            font-size: 2.5rem;
+        }
+
+        .menu .box__container .box .content p {
+            color: var(--light);
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+
+        .menu .box__container .box .content span {
+            color: var(--orange);
+            margin-left: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .footer {
+            width: 100vh;
+            position: relative;
+            height: max-content;
+            left: 0;
+
+        }
+
+        /* menu end */
+    </style>
+
+
+    <footer class="contianer col-12 mb-0 mt-5 " style="width:100%">
+
+        <div class="container-fluid bg-dark text-light footer   wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="../images/chege Bet -logos.jpeg" alt="logo photo">
+                        <h5 class="text-light fw-normal">Monday - Monday</h5>
+                        <p> In addition to the services that we known for <br> in the near future we are going to begin
+                            to give
+                            traing with certeficates on hotel and tourisim management system</p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h3>OFFICE<div><span></span></div>
+                        </h3>
+
+                        <p>Asmera Road</p>
+                        <p>Gonder</p>
+                        <p>Ethiopia</p>
+                        <p>godadsamuel@gmail.com</p>
+
+                        <h5>dail up +251980117655</h5>
+                        <hr>
+
+                    </div>
+
+
+                    <div class="col-lg-3 ">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">PAGES</h4>
+                        <a class="btn btn-link" href="About us.html"
+                            style="text-decoration:none;align-items:center">About Us</a>
+                        <a class="btn btn-link" href="Contact us.html" style="text-decoration:none">Contact Us</a>
+                        <a class="btn btn-link" href="Category.html" style="text-decoration:none">Category</a>
+                        <a class="btn btn-link" href="Location.html"
+                            style="text-decoration:none;align-items:center">Location.</a>
+                        <a class="btn btn-link" href="menus.html" style="text-decoration:none">Menu</a>
+                        <a class="btn btn-link" href="index.html"
+                            style="text-decoration:none;align-items:center">home</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3>contact us </h3>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/samuel.godad"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/samuel.godad" class="btn btn-outline-light btn-social"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <br>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-pinterest"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-telegram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/samuel.godad"><i
+                                    class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                        <p class="mt-3">You can use one of the above medias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f5ba5a9167.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
